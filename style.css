@@ -1,0 +1,106 @@
+*{
+
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+
+}
+body{
+
+background-image: url(uni5.jpg);
+background-position: center;
+font-family: sans-serif;
+background-size: cover;
+background-attachment: fixed;
+
+
+
+}
+.menu-bar{
+	
+background-color:red;
+
+text-align: center;
+
+}
+
+.menu-bar ul{
+display: inline-flex;
+list-style:none;
+color: #fff;
+
+
+}
+.menu-bar ul li {
+
+width: 150px;
+margin: 15px;
+padding: 15px;
+
+}
+.menu-bar ul li a{
+
+
+text-decoration: none;
+color: #fff;
+
+}
+.active,.menu-bar ul li:hover{
+
+
+background: orange;
+
+
+}
+.sub-menu{
+	display: none;
+}
+
+
+
+.menu-bar ul li:hover .sub-menu{
+
+display: block;
+position: absolute;
+background: rgb(0,100,0);
+margin-top: 15px;
+margin-left: -15px;
+}
+.menu-bar ul li:hover .sub-menu ul{
+
+display: block;
+margin:10px;
+
+}
+.menu-bar ul li:hover .sub-menu ul li{
+
+width: 150px;
+padding: 10px;
+border-bottom: 1px dotted #fff;
+background: transparent;
+border-radius: 0;
+text-align: left;
+
+}
+.menu-bar ul li:hover .sub-menu ul li:last-child{
+
+border-bottom:none;
+
+}
+.title{
+
+position: absolute;
+top: 40%;
+left: 50%;
+transform:translate(-50%,-50%);
+
+
+
+}
+.title h1{
+color: red;
+font-size: 40px;
+display:inline-block;
+
+
+}
